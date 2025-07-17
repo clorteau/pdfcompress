@@ -29,5 +29,5 @@ Compression level: default, screen (72 dpi), ebook (150 dpi), printer
 --version             show program's version number and exit
 
 ## QT Interface
-![screenshot](image_url "github/screenshot.png")
+![screenshot]("github/screenshot.png")
 
