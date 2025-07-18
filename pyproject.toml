@@ -1,0 +1,43 @@
+# hatch build
+# python -m twine upload --repository pypi dist/*
+# or
+# hatch publish main
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gs-pdf-compress"
+version = "0.2"
+authors = [
+  { name="Clem Lorteau", email="spam@lorteau.fr" },
+]
+description = "Compress PDF files with Ghostscript"
+
+# remember to add ghostscript to binary packages
+dependencies = [ "PyQt6", ]
+
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Environment :: X11 Applications :: Qt",
+]
+license = "MIT"
+license-files = ["LICENSE.txt"]
+keywords = ["pdf", "compression", "ghostscript", "qt", "qt6", "python"]
+
+[project.urls]
+Homepage = "https://github.com/clorteau/pdfcompress"
+Issues = "https://github.com/clorteau/pdfcompress/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gs_pdf_compress"]
+
+[project.scripts]
+pdfcompress = "gs_pdf_compress.pdfcompress:main"
+
+[project.gui-scripts]
+pdfcompress-qt = "gs_pdf_compress.pdfcompress_qt:main"
