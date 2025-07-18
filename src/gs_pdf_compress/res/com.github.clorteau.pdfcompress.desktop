@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=PDFCompress
+Exec=pdfcompress-qt
+Comment=Compress PDF files with Ghostscript
+Icon=/usr/share/icons/pdfcompress/com.github.clorteau.pdfcompress.svg
+Terminal=false
+Categories=Application;Office;QT;
+Keywords=Office;PDF;Ghostscript;
+StartupNotify=true
