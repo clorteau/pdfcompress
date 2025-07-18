@@ -8,6 +8,20 @@ Compress PDF files using Ghostscript.
 * PyQT 6
 * Ghostscript
 
+# Installation
+
+## Archlinux
+
+`$ yay -S gs-pdf-compress`
+
+## from PyPI
+
+`$ pipx install gs-pdf-compress`
+
+## from source or wheel package
+
+`$ pipx install <package_file>`
+
 # Usage
 
 ## Command line
@@ -28,4 +42,4 @@ Compression level: default, screen (72 dpi), ebook (150 dpi), printer
 
 ## QT Interface
 
-![screenshot](github/screenshot.png)
+![screenshot](https://lorteau.fr/pdfcompress/screenshot.png)
